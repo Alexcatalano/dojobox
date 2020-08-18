@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/x-icon" href="dojobox.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link rel="stylesheet" href="./css/utilities.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Post One</title>
+</head>
+<body id="home">
+    <header class="hero blog">
+        <div id="navbar" class="navbar top">
+            <h1 class="logo"><a href="index.html">
+                <img src="./image_resources-2/cases/logodojo.png" alt="" class="dojo">  
+           </h1> 
+           <nav>
+               <ul>
+                   <li><a href="index.html">Home</a></li>
+                   <li><a href="index.html#about">About</a></li>
+                   <li><a href="index.html#cases">Box's</a></li>
+                   <li><a href="index.html#blog">News</a></li>
+                   <li><a href="index.html#contact">Contact</a></li>
+               </ul>
+           </nav>
+        </div>
+
+        <div class="content">
+            <h1>Our History</h1>
+        </div>
+    </header>
+    <main>
+        <section class="post">
+            <h2>Blog Post Two</h2>
+            <p class="meta">
+                <i class="fas fa-user"></i> Posted by <em>Alex Catalano</em> | May 21 2020
+            </p>
+            <img src="./image_resources-2/cases/dojoresized.png" alt="">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt natus voluptate, enim doloribus ipsam soluta neque quos, veniam atque sequi nihil placeat minima repudiandae eveniet qui! Impedit accusamus voluptatibus iste.</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat distinctio optio in porro beatae blanditiis quasi fugit possimus! Doloribus, necessitatibus ipsum. Provident cum eligendi commodi asperiores! Quidem nulla perferendis harum, magni assumenda illo vel, repellendus ex quos ut similique sapiente fugit magnam possimus ipsa aliquam est quasi consequatur at? Ea molestiae consequuntur maiores animi possimus iste odio aspernatur aut dicta.</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore, ad! Id adipisci assumenda recusandae aperiam sint odit similique tempore? A iure mollitia iste sint inventore corrupti maiores! Repellat delectus dolor voluptatibus dolorum porro similique quasi saepe blanditiis, beatae velit explicabo aut nisi recusandae atque cum officiis eos ipsum architecto quisquam?</p>
+        </section>
+    </main>
+    <footer class="footer bg-dark">
+      <div class="social">
+          <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
+          <a href="#"><i class="fab fa-youtube fa-2x"></i></a>
+          <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
+      </div> 
+      <p>Copyright &copy; 2020 - DojoBox Club</p> 
+    </footer>
+    <script>
+        const navbar = document.getElementById('navbar');
+        let scrolled = false;
+
+        window.onscroll = function() {
+            if(window.pageYOffset > 100) {
+                navbar.classList.remove('top');
+                if(!scrolled) {
+                    navbar.style.transform = 'translateY(-70px)';
+                }
+                setTimeout(function() {
+                    navbar.style.transform = 'translateY(0)';
+                    scrolled = true;
+                }, 200);
+            } else {
+                navbar.classList.add('top');
+                scrolled = false;
+            }
+        }
+        
+    </script>
+</body>
+</html>
+   
+
+        
